@@ -1,0 +1,225 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Biodata saya</title>
+
+<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.0/font/bootstrap-icons.css">
+<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600&display=swap" rel="stylesheet">
+
+<style>
+html{ scroll-behavior:smooth; }
+
+body{
+    font-family:'Poppins',sans-serif;
+    background:linear-gradient(135deg,#ffe4f2,#ede9ff,#e0f2fe,#fff7d6);
+    padding-top:90px;
+}
+
+/* NAVBAR */
+.navbar{
+    position:sticky;
+    top:0;
+    z-index:1000;
+    background:rgba(255,255,255,.75);
+    backdrop-filter:blur(12px);
+    box-shadow:0 5px 20px rgba(0,0,0,.1);
+}
+.navbar-brand{
+    font-weight:600;
+    color:#7c3aed !important;
+}
+.nav-link{
+    color:#555 !important;
+}
+.nav-link:hover{
+    color:#ec4899 !important;
+}
+
+/* CARD */
+.card{
+    border:none;
+    border-radius:25px;
+    background:rgba(255,255,255,.95);
+    box-shadow:0 20px 40px rgba(0,0,0,.15);
+    animation:fadeUp 1s ease;
+}
+
+@keyframes fadeUp{
+    from{opacity:0;transform:translateY(40px);}
+    to{opacity:1;transform:translateY(0);}
+}
+
+/* FOTO */
+.profile-img{
+    width:160px;
+    height:160px;
+    border-radius:50%;
+    object-fit:cover;
+    border:5px solid;
+    border-image:linear-gradient(45deg,#f9a8d4,#c4b5fd,#93c5fd,#fde68a) 1;
+    margin-top:-80px;
+    cursor:pointer;
+}
+
+/* BUTTON */
+.btn-custom{
+    background:linear-gradient(45deg,#f9a8d4,#c4b5fd,#93c5fd
+    border:none;
+    border-radius:30px;
+    padding:10px 30px;
+    font-weight:600;
+    color:#444;
+}
+
+/* TIMELINE */
+.timeline{
+    border-left:4px solid #c4b5fd;
+    padding-left:20px;
+}
+.timeline div{ margin-bottom:20px; }
+
+/* FOOTER */
+footer{
+    background:linear-gradient(90deg,#f9a8d4,#c4b5fd,#93c5fd,#fde68a);
+}
+</style>
+</head>
+
+<body>
+
+<!-- NAVBAR -->
+<nav class="navbar navbar-expand-lg">
+<div class="container">
+<a class="navbar-brand" href="#about">KHANAYA</a>
+
+<button class="navbar-toggler" data-toggle="collapse" data-target="#menu">
+<span class="navbar-toggler-icon"></span>
+</button>
+
+<div class="collapse navbar-collapse" id="menu">
+<ul class="navbar-nav ml-auto">
+
+<li class="nav-item">
+<a class="nav-link" href="#about">About</a>
+</li>
+
+<li class="nav-item dropdown">
+<a class="nav-link dropdown-toggle" href="#" data-toggle="dropdown">
+Profile
+</a>
+<div class="dropdown-menu">
+<a class="dropdown-item" href="#skill">Skill</a>
+<a class="dropdown-item" href="#education">Education</a>
+</div>
+</li>
+
+<li class="nav-item">
+<a class="nav-link" href="#gallery">Gallery</a>
+</li>
+
+<li class="nav-item">
+<a class="nav-link" href="#quotes">Quotes</a>
+</li>
+
+<li class="nav-item">
+<a class="nav-link" href="#contact">Contact</a>
+</li>
+
+</ul>
+</div>
+</div>
+</nav>
+
+<!-- ABOUT -->
+<section id="about" class="py-5">
+<div class="container">
+<div class="card text-center p-4 col-md-8 mx-auto">
+
+<img src="foto-saya.jpg" id="profileImage" class="profile-img mx-auto">
+<input type="file" id="uploadFoto" hidden>
+<p class="text-muted mt-2"></p>
+
+<h3>KHANAYACR</h3>
+<p class="text-muted">Pelajar • TKJ</p>
+<hr>
+
+<p><strong>Nama:</strong> Khanaya CR</p>
+<p><strong>Sekolah:</strong> SMK HS Agung</p>
+<p><strong>Jurusan:</strong> Teknik Komputer & Jaringan</p>
+
+</div>
+</div>
+</section>
+
+<!-- SKILL -->
+<section id="skill" class="py-5">
+<div class="container">
+<h4 class="text-center mb-4">Skill</h4>
+<div class="row">
+<div class="col-md-3 mb-3"><div class="card p-3 text-center">HTML & CSS</div></div>
+<div class="col-md-3 mb-3"><div class="card p-3 text-center">Menulis</div></div>
+<div class="col-md-3 mb-3"><div class="card p-3 text-center">Menggambar</div></div>
+<div class="col-md-3 mb-3"><div class="card p-3 text-center">Editing</div></div>
+</div>
+</div>
+</section>
+
+
+<!-- EDUCATION -->
+<section id="education" class="py-5">
+<div class="container">
+<div class="card p-4 col-md-8 mx-auto text-center">
+<h4>Education</h4>
+<p>SMK HS Agung – Teknik Komputer & Jaringan</p>
+</div>
+</div>
+</section>
+
+
+
+<!-- QUOTES -->
+<section id="quotes" class="py-5">
+<div class="container">
+<div class="card p-4 col-md-8 mx-auto text-center">
+<p class="font-italic">
+"motivasi tanpa aksi hanyalah imajinasi"
+</p>
+</div>
+</div>
+</section>
+
+<!-- CONTACT -->
+<section id="contact" class="py-5 text-center">
+<a href="https://www.instagram.com/khana_yaaw09?igsh=MWJ5ejZiZjJrNjRqeQ=="
+target="_blank"
+class="btn btn-custom">
+<i class="bi bi-instagram"></i> Follow Instagram
+</a>
+</section>
+
+<footer class="text-center py-4">
+© 2026 kcr ✨
+</footer>
+
+<script>
+const profileImage=document.getElementById("profileImage");
+const uploadFoto=document.getElementById("uploadFoto");
+profileImage.onclick=()=>uploadFoto.click();
+uploadFoto.onchange=()=>{
+ const file=uploadFoto.files[0];
+ if(file){
+  const reader=new FileReader();
+  reader.onload=e=>profileImage.src=e.target.result;
+  reader.readAsDataURL(file);
+ }
+}
+</script>
+
+<script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@4.5.2/dist/js/bootstrap.bundle.min.js"></script>
+
+</body>
+</html>
